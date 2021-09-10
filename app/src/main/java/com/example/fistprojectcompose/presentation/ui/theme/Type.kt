@@ -1,4 +1,4 @@
-package com.example.fistprojectcompose.ui.theme
+package com.example.fistprojectcompose.presentation.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
