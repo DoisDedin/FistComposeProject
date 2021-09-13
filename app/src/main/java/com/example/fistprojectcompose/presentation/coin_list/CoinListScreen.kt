@@ -36,7 +36,7 @@ fun CoinListScreen(
                 )
             }
         }
-        if (state.error.isBlank()) {
+        if (state.error.isNotBlank()) {
             Text(
                 text = state.error,
                 color = MaterialTheme.colors.error,

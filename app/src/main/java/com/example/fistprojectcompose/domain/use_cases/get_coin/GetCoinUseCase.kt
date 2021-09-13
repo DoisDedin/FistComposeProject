@@ -17,13 +17,13 @@ class GetCoinUseCase @Inject constructor(
 ) {
     operator fun invoke(coinId: String): Flow<Resource<CoinDetail>> = flow {
         try {
-            emit(Resource.Loading())
+            emit(Resource.Loading<CoinDetail>())
             val coin = repository.getCoinById(coinId = coinId).toCoinDetail()
-            emit(Resource.Sucess(coin))
+            emit(Resource.Sucess<CoinDetail>(coin))
         } catch (error: HttpException) {
-            emit(Resource.Error(error.localizedMessage ?: "error error bizzz bizz"))
+            emit(Resource.Error<CoinDetail>(error.localizedMessage ?: "error error bizzz bizz"))
         } catch (error: IOException) {
-            emit(Resource.Error("invalid connection"))
+            emit(Resource.Error<CoinDetail>("invalid connection"))
         }
     }
 }
