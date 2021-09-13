@@ -1,11 +1,11 @@
-package com.example.fistprojectcompose.presentation.coin_list.component
+package com.example.fistprojectcompose.presentation.coin_list
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import com.example.fistprojectcompose.common.Resource
 import com.example.fistprojectcompose.domain.use_cases.get_coins.GetCoinsUseCase
-import com.example.fistprojectcompose.presentation.coin_list.components.CoinListState
+import com.example.fistprojectcompose.presentation.coin_list.CoinListState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.onEach
 import javax.inject.Inject

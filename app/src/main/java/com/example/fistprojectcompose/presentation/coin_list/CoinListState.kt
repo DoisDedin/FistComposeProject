@@ -1,4 +1,4 @@
-package com.example.fistprojectcompose.presentation.coin_list.components
+package com.example.fistprojectcompose.presentation.coin_list
 
 import com.example.fistprojectcompose.domain.model.a.Coin
 
